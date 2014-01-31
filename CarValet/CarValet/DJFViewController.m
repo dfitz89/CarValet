@@ -105,7 +105,7 @@ NSInteger displayedCarIndex;                 // 2
 
 - (void) displayCurrentCarInfo {
     Car *currentCar;
-    currentCar = [arrayOfCars objectAtIndex:displayedCarIndex];
+    currentCar = arrayOfCars[displayedCarIndex];
     
     self.carInfoLabel.text = currentCar.carInfo;
     
